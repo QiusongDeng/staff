@@ -1,0 +1,45 @@
+#应用服务WEB
+server:
+  #访问端口
+  port: 8080
+
+spring:
+  #数据库连接信息
+  datasource:
+    #驱动类名称
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库连接的url
+    url: jdbc:mysql://localhost:3306/staff
+    #连接数据库的用户名
+    username: root
+    #连接数据库的密码
+    password: 123456
+  servlet:
+    #文件上传
+    multipart:
+      #配置单个文件上传大小限制
+      max-file-size: 10MB
+      #配置单个请求最大大小的限制 (一次请求中是可以上传多个文件)
+      max-request-size: 100MB
+
+mybatis:
+  configuration:
+    #配置mybatis的日志, 指定输出到控制台
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #开启mybatis的驼峰命名自动映射开关 a_column ------> aCloumn
+    map-underscore-to-camel-case: true
+  #指定Mybatis的Mapper文件
+  mapper-locations: classpath:mappers/*xml
+  #指定Mybatis的实体目录
+  type-aliases-package: com.deng.mybatis.entity
+
+aliyun:
+  #阿里云OSS配置
+  oss:
+    endpoint: https://oss-cn-guangzhou.aliyuncs.com
+    accessKeyId: LTAI5tDAbGchiNbMW33yZwXa
+    accessKeySecret: OlRxI3pj9KxToPaf1H5EOL8JUblEXv
+    bucketName: com-deng-staff
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransctionManager: debug
