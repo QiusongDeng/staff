@@ -5,10 +5,10 @@
 
 #### 软件架构
 软件架构说明
-1.staff-parent模块主要起依赖管理作用，只有pom文件
-2.staff-pojo模块存放实体类
-3.staff-utils模块存放工具栏
-4.staff模块为程序主体，采用三层架构模式、RestFul风格接口，整体基于Spring Boot开发
+1. staff-parent模块主要起依赖管理作用，只有pom文件
+2. 这里是列表文本staff-pojo模块存放实体类
+3. staff-utils模块存放工具栏
+4. staff模块为程序主体，采用三层架构模式、RestFul风格接口，整体基于Spring Boot开发
 #### 安装教程
 
 1.  首先需要配置Maven仓库，管理jar包
