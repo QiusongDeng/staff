@@ -11,9 +11,9 @@ spring:
     #数据库连接的url
     url: jdbc:mysql://localhost:3306/staff
     #连接数据库的用户名
-    username: root
+    username: ****
     #连接数据库的密码
-    password: 123456
+    password: ******
   servlet:
     #文件上传
     multipart:
@@ -36,10 +36,10 @@ mybatis:
 aliyun:
   #阿里云OSS配置
   oss:
-    endpoint: https://oss-cn-guangzhou.aliyuncs.com
-    accessKeyId: LTAI5tDAbGchiNbMW33yZwXa
-    accessKeySecret: OlRxI3pj9KxToPaf1H5EOL8JUblEXv
-    bucketName: com-deng-staff
+    endpoint: ***
+    accessKeyId: ***
+    accessKeySecret: ***
+    bucketName: ***
 logging:
   level:
     org.springframework.jdbc.support.JdbcTransctionManager: debug
